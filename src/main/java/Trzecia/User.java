@@ -12,6 +12,8 @@ public class User {
     String login;
     String password;
     String email;
+    public String oldPassword;
+    public String newPassword;
 
     public User() {
         this.id = id;

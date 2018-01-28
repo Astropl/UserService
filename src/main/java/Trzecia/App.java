@@ -14,16 +14,19 @@ public class App {
 
 
         UserService userService = new UserServiceImplemets ();
-
         boolean islogin = userService.login ( "Pawel", "Pawel" );
         log.info ( "Zalogowany: " + islogin );
         User user1 = new User ();
         user1.setLogin ( "Pawel" );
         user1.setPassword ( "Pawel" );
         userService.registration ( user1 );
-        boolean islogin1 = userService.login ( "Pawel", "Paweln" );
+        boolean islogin1 = userService.login ( "Pawel", "Pawel" );
         log.info ( "Zalogowany: " + islogin1 );
-
+        user1.setPassword ( "nowyPawel" );
+        userService.changePassword ( "Pawel", "Pawel", "newPawel" );
+        boolean islogin2 = userService.changePassword ( "Pawel", "Pawel", "newPawel" );
+        log.info ( "Zalogowany: " + islogin2 );
+//log.info ();
     }
 }
 
