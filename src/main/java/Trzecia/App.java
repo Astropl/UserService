@@ -26,6 +26,8 @@ public class App {
         userService.changePassword ( "Pawel", "Pawel", "newPawel" );
         boolean islogin2 = userService.changePassword ( "Pawel", "Pawel", "newPawel" );
         log.info ( "Zalogowany: " + islogin2 );
+
+//tesick
 //log.info ();
     }
 }
